@@ -1,0 +1,645 @@
+body,
+html {
+    height: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    vertical-align: baseline;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    /* line-height: 1.5; */
+    text-rendering: optimizeLegibility;
+    scroll-behavior: smooth;
+}
+
+figure {
+    margin-bottom: 0 !important;
+}
+
+a {
+    cursor: pointer;
+    color: rgb(48, 47, 56) !important;
+    transition: all 0.1s ease 0s;
+}
+
+a:hover {
+    text-decoration: none !important;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    height: 115px;
+}
+
+.header {
+    position: relative;
+    width: 90%;
+    height: 100%;
+    /* max-width: 1440px; */
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav#navbar-links,
+aside {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+aside {
+    margin-left: 40px;
+}
+
+/* aside:last-of-type {
+    margin-left: 0;
+    position: absolute;
+    right: 0;
+} */
+
+a.nav-links {
+    display: block;
+}
+
+p.p-links:hover {
+    border-bottom: 2px solid #fcd232;
+    margin-bottom: -2px;
+}
+
+p.p-links {
+    font-weight: bold;
+    font-size: 14px;
+    margin: 0;
+    padding: 3px;
+}
+
+.p-button,
+.send-btn {
+    font-weight: 400;
+    font-size: 14px;
+    margin: 0;
+    padding: 12px 18px;
+    background-color: rgb(48, 47, 56) !important;
+    color: #fcd232 !important;
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+}
+
+i.fa-plus,
+i.fa-arrow-right {
+    font-weight: 200;
+    margin-right: 8px;
+    line-height: 1.5;
+}
+
+/* Burger menu  */
+
+.navbar-menu {
+    display: none;
+}
+
+/* Drop Header Menu  */
+
+header.drop-header {
+    display: none;
+    text-align: center;
+    height: auto;
+    background-color: #202020;
+}
+
+ul.drop-nav-menu {
+    list-style: none;
+    margin-bottom: 0;
+    padding: 2%;
+}
+
+ul.drop-nav-menu li {
+    margin: 2rem;
+}
+
+
+.drop-links>.d-links {
+    font-weight: bold;
+    font-size: 16px !important;
+    padding: 3px;
+    color: #F5F5F5;
+}
+
+p.d-links {
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+.d-links:active {
+    border-bottom: 2px solid #fcd232;
+    margin-bottom: -2px;
+}
+
+.drop-p-button {
+    display: inline-block;
+    background-color: #fcd232;
+    color: #202020;
+    font-weight: bold;
+    font-size: 14px;
+    margin: 0;
+    padding: 12px 18px;
+    border-radius: 5px;
+}
+
+.drop-p-button i {
+    font-weight: 600;
+}
+
+/* Modal  */
+
+.modal-dialog {
+    max-width: 650px !important;
+}
+
+.modal-header {
+    border-bottom: none !important;
+}
+
+.modal-header>h4 {
+    font-weight: bold;
+}
+
+.modal-body label {
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.form-group {
+    position: relative;
+}
+
+.close {
+    opacity: 1 !important;
+}
+
+.close:hover {
+    opacity: 0.5 !important;
+}
+
+small {
+    color: #ff1300;
+    position: absolute;
+    right: 0;
+}
+
+.off-btn {
+    font-weight: bold !important;
+    margin-right: 1rem;
+}
+
+.off-btn,
+.send-btn {
+    float: right;
+}
+
+/* Sections */
+
+.section-1,
+.section-2,
+.section-3,
+.section-4,
+.section-5 {
+    padding-bottom: 5%;
+    line-height: 1.2;
+    padding-left: 5% !important;
+    padding-right: 5% !important;
+}
+
+.col-lg-4,
+.col-md-6,
+.col-sm-12,
+.col-xs-12 {
+    margin-bottom: 30px;
+}
+
+.col-hidden-lg {
+    display: none;
+}
+
+.eve-text h2,
+.eventes {
+    font-size: 40px;
+    font-weight: bold;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.img-eve img.events {
+    display: block;
+    border-radius: 0px !important;
+}
+
+.eve-text p {
+    padding-bottom: 1rem;
+}
+
+.btn-eve {
+    color: #fcd232 !important;
+    background-color: rgb(48, 47, 56) !important;
+    transition: all 0.2s ease-out !important;
+}
+
+.btn-eve:hover {
+    transform: scale(1.05);
+    box-shadow: 10px 15px 15px -7px rgba(0, 0, 0, 0.66);
+}
+
+.section-2 {
+    padding-top: 5%;
+}
+
+figcaption {
+    margin-bottom: 16px;
+    font-weight: 600;
+    color: #181818 !important;
+}
+
+/* .img-bg-2 {
+    background-image: url("../assets/images/Space_Kitchen_Galerija/IMG_2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.img-bg-1 {
+    background-image: url("../assets/images/Space_Kitchen_Galerija/IMG_1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.img-bg-3 {
+    background-image: url("../assets/images/Space_Kitchen_Galerija/IMG_3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.img-bg-4 {
+    background-image: url("../assets/images/Space_Kitchen_Galerija/IMG_4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+} */
+
+/* .percent50 {
+    flex: 0 0 48% !important;
+    max-width: 48% !important;
+    margin: 1%;
+} */
+
+.img-bg-1 img,
+.img-bg-2 img,
+.img-bg-3 img,
+.img-bg-4 img {
+    margin-bottom: 0;
+}
+
+/* .img-bg-1 {
+    padding-bottom: 30px;
+} */
+
+.black-block {
+    padding: 0.5rem 1.7rem !important;
+    font-size: 1.5rem !important;
+    margin-right: 0.6rem;
+    margin-bottom: 1.2rem;
+    background-color: #181818 !important;
+    cursor: auto !important;
+}
+
+.black-block i {
+    color: #fcd232;
+}
+
+.img-gray {
+    filter: grayscale(100%);
+}
+
+.eve-text h3 {
+    font-size: 35px;
+    font-weight: bold;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+
+/* Footer section */
+
+.section-7 {
+    margin-top: 5%;
+    background-color: #F5F5F5;
+    border-top: 2px solid #C8C8C8;
+}
+
+.footer-links {
+    padding: 5rem 3rem;
+}
+
+h5 {
+    padding-bottom: 1rem;
+}
+
+ul.useful-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li.a-link {
+    padding: 0.3rem 0;
+    font-weight: 500;
+}
+
+.f-logo img {
+    height: 100px;
+    width: 100px;
+}
+
+.soc-icon {
+    margin-right: 1.7rem;
+
+}
+
+.fa-facebook,
+.fa-linkedin-in,
+.fa-instagram {
+    font-size: 2rem;
+}
+
+.fa-facebook {
+    color: #4267B2;
+}
+
+.fa-linkedin-in {
+    color: #0077B5;
+}
+
+.fa-instagram {
+    color: #DC4288;
+}
+
+footer {
+    background-color: #E0E0E0;
+}
+
+p.p-footer {
+    margin: 0;
+    padding: 1.7rem;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+@media only screen and (max-width: 1230px) {
+
+    aside {
+        margin-left: 20px;
+    }
+
+    p.p-links,
+    .p-button,
+    .send-btn {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 1079px) {
+
+    aside {
+        margin-left: 20px;
+    }
+
+    p.p-links,
+    .p-button,
+    .send-btn {
+        font-size: 12px;
+    }
+
+}
+
+/* Tablet :  */
+/* Mobile ans small mobile devices */
+
+@media only screen and (max-width: 992px) {
+
+    nav#navbar-links {
+        display: none;
+    }
+
+    .navbar-menu {
+        display: block;
+        margin: 0;
+        padding: 10px 12px;
+        background-color: rgb(48, 47, 56);
+        color: #fcd232;
+        box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.15);
+        border: none;
+        border-radius: 5px;
+        position: absolute;
+        right: 0;
+    }
+
+    a.nav-links {
+        position: absolute;
+        right: 4.5rem;
+    }
+
+    .navbar-menu span {
+        vertical-align: middle;
+    }
+
+    .navbar-menu i.fa-bars {
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    h2.eventes br {
+        display: none;
+    }
+
+    /* bg-images in Space Kitchen section */
+
+    .img-bg-1 {
+        padding-bottom: 30px;
+    }
+
+    .col-hidden-lg {
+        display: block;
+    }
+
+    .col-hidden-md {
+        display: none;
+    }
+
+    .section-3 .col-lg-4,
+    .section-3 .col-md-6,
+    .section-3 .col-sm-12,
+    .section-3.col-xs-12 {
+        margin-bottom: 0px;
+    }
+
+    .section-1,
+    .section-2,
+    .section-3,
+    .section-4,
+    .section-5 {
+        padding-bottom: 1%;
+        line-height: 1.2;
+        padding-left: 5% !important;
+        padding-right: 5% !important;
+    }
+
+    .order:nth-of-type(1) {
+        order: 1;
+    }
+
+    .order:nth-of-type(2) {
+        order: 2;
+    }
+
+    .order:nth-of-type(3) {
+        order: 3;
+    }
+
+    .order:nth-of-type(4) {
+        order: 4;
+    }
+
+    .order:nth-of-type(5) {
+        order: 8;
+    }
+
+    .order:nth-of-type(6) {
+        order: 7;
+    }
+
+    .order:nth-of-type(7) {
+        order: 6;
+    }
+
+    .order:nth-of-type(8) {
+        order: 5;
+    }
+
+    .order:nth-of-type(9) {
+        order: 9;
+    }
+
+    /* Drop heading menu */
+
+    header.drop-header {
+        display: block;
+    }
+
+    li#last-btn {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    .img-bg-2,
+    .img-bg-3,
+    .img-bg-4 {
+        padding-bottom: 30px;
+    }
+
+    .order:nth-of-type(1) {
+        order: 2;
+    }
+
+    .order:nth-of-type(2) {
+        order: 4;
+    }
+
+    .order:nth-of-type(3) {
+        order: 1;
+    }
+
+    .order:nth-of-type(4) {
+        order: 7;
+    }
+
+    .order:nth-of-type(5) {
+        order: 5;
+    }
+
+    .order:nth-of-type(6) {
+        order: 6;
+    }
+
+    .order:nth-of-type(7) {
+        order: 8;
+    }
+
+    .order:nth-of-type(8) {
+        order: 9;
+    }
+
+    .order:nth-of-type(9) {
+        order: 3;
+    }
+
+    .black-block {
+        font-size: 1.3rem !important;
+        padding: 0.5rem 1.2rem !important;
+    }
+
+    /* Drop heading burger menu */
+
+    li#last-btn {
+        display: block;
+    }
+
+    .header a.nav-links {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 450px) {
+
+    .p-button {
+        padding: 8px 10px;
+        font-size: 12px;
+    }
+
+    .navbar-menu {
+        font-size: 12px;
+        padding: 8px 10px;
+    }
+
+    a.nav-links {
+        position: absolute;
+        right: 3rem;
+    }
+
+    .btn-edu-left,
+    .btn-edu-right {
+        font-size: 12px !important;
+        margin-bottom: 8px;
+    }
+
+    .btn-edu-right {
+        margin-left: 0;
+    }
+
+    .btn-eve {
+        padding: 8px 20px !important;
+    }
+
+}

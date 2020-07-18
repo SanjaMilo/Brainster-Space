@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - Space</title>
+    <link rel="stylesheet" href="css/eventsspace.css">
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Inter">
+    <link href="https://kit-pro.fontawesome.com/releases/v5.12.1/css/pro.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <a class="logo-link" href="index.html">
+                <figure id="logo">
+                    <img src="assets/brainster_space_logo.svg" alt="Logo Brainster-Space">
+                </figure>
+            </a>
+            <nav id="navbar-links" class="mr-auto">
+                <aside>
+                    <a class="nav-links" href="spaceblog.html">
+                        <p class="p-links">SPACE БЛОГ</p>
+                    </a>
+                </aside>
+                <aside>
+                    <a class="nav-links" href="calendar.html">
+                        <p class="p-links">НАСТАНИ</p>
+                    </a>
+                </aside>
+                <aside>
+                    <a class="nav-links" href="https://blog.brainster.co/coworking_europe/">
+                        <p class="p-links">CO-WORKING</p>
+                    </a>
+                </aside>
+                <aside>
+                    <a class="nav-links" href="academies.html">
+                        <p class="p-links">АКАДЕМИИ</p>
+                    </a>
+                </aside>
+                <aside>
+                    <a class="nav-links" href="eventsspace.html">
+                        <p class="p-links">ПРОСТОР ЗА НАСТАНИ</p>
+                    </a>
+                </aside>
+                <aside>
+                    <a class="nav-links" href="https://partners.brainster.co/">
+                        <p class="p-links">ПАРТНЕРСТВА</p>
+                    </a>
+                </aside>
+            </nav>
+
+            <a class="nav-links">
+                <p class="p-button" data-toggle="modal" data-target="#staticBackdrop"><span><i
+                            class="fas fa-plus"></i></span> ПРИКЛУЧИ СЕ</p>
+            </a>
+
+            <button class="navbar-menu" type="button">
+                <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+            </button>
+
+            <div class="modal fade" id="staticBackdrop" data-backdrop="static" tabindex="-1" role="dialog"
+                aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="staticBackdropLabel">Приклучи се</h4>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span class="x-close" aria-hidden="true"><i class="fas fa-times-circle"></i></span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                    <label for="formControlInput1">Име и Презиме (задолжително)</label>
+                                    <small class="a"></small>
+                                    <input type="text" class="form-control i-name" id="formControlInput1"
+                                        placeholder="Внесете Име и Презиме" style="font-style:italic" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="formControlInput2">Име на Компанија (незадолжително)</label>
+                                    <input type="text" class="form-control" id="formControlInput2"
+                                        placeholder="Внесете Име на Вашата Компанија" style="font-style:italic">
+                                </div>
+                                <div class="form-group">
+                                    <label for="formControlInput3">Email адреса (задолжително)</label>
+                                    <small class="b"></small>
+                                    <input type="email" class="form-control i-email" id="formControlInput3"
+                                        placeholder="Внесете Имеил Адреса пр: name@example.com"
+                                        style="font-style:italic" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="formControlInput4">Телефонски Број (задолжително)</label>
+                                    <small class="c"></small>
+                                    <input type="number" class="form-control i-phone" id="formControlInput4"
+                                        placeholder="Внесете Телефонски Број 07XXXXXXX" style="font-style:italic"
+                                        required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="formControlTextarea1">Предолог за соработка (незадолжително)</label>
+                                    <textarea class="form-control" id="formControlTextarea1" rows="3"
+                                        style="font-style:italic"
+                                        placeholder="Во 300 карактери, опишете што сакате да соработуваме"></textarea>
+                                </div>
+
+                                <button type="submit" class="btn send-btn"><i class="fas fa-arrow-right"></i> ИСПРАТИ
+                                    ФОРМА</button>
+                                <button type="button" class="btn off-btn" data-dismiss="modal">ИСКЛУЧИ</button>
+
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <header class="drop-header">
+        <ul class="drop-nav-menu">
+            <li>
+                <a class="drop-links" href="spaceblog.html">
+                    <p class="d-links">SPACE БЛОГ</p>
+                </a>
+            </li>
+            <li>
+                <a class="drop-links" href="calendar.html">
+                    <p class="d-links">НАСТАНИ</p>
+                </a>
+            </li>
+            <li>
+                <a class="drop-links" href="https://blog.brainster.co/coworking_europe/">
+                    <p class="d-links">CO-WORKING</p>
+                </a>
+            </li>
+            <li>
+                <a class="drop-links" href="academies.html">
+                    <p class="d-links">АКАДЕМИИ</p>
+                </a>
+            </li>
+            <li>
+                <a class="drop-links" href="eventsspace.html">
+                    <p class="d-links">ПРОСТОР ЗА НАСТАНИ</p>
+                </a>
+            </li>
+            <li><a class="drop-links" href="https://partners.brainster.co/">
+                    <p class="d-links">ПАРТНЕРСТВА</p>
+                </a>
+            </li>
+            <li id="last-btn">
+                <a class="drop-links">
+                    <p class="drop-p-button" data-toggle="modal" data-target="#staticBackdrop"><span><i
+                                class="fas fa-plus"></i></span> ПРИКЛУЧИ СЕ</p>
+                </a>
+            </li>
+        </ul>
+    </header>
+
+    <div class="container-fluid section-1">
+
+        <div class="row">
+            <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 align-self-center">
+                <div class="eve-text">
+                    <h2 class="eventes">Простор за<br> настани</h2>
+                    <p class="events">Нашиот простор се прилагодува според потребите на вашиот настан. Седум различни
+                        простории и Space Kitchen. <br><br>
+                        Наменски создадени да се прилагодуваат и менуваат во согласност со типот на настан кој го
+                        организирате. <br><br>
+                        Организираме конференции до 150 учесници и обуки и предавања за групи од 20 учесници.
+                        Контактирај не' за да ви хостираме одличен настан.
+                    </p>
+                    <a href="#host" type="button" class="btn btn-eve"><i class="fas fa-plus"></i> БУКИРАЈ НЕ</a>
+                </div>
+            </div>
+            <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12 img-eve">
+                <img class="rounded img-fluid events" src="./assets/images/Za_Nas/prostor za nastani.jpg" alt="">
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container-fluid section-2">
+
+        <div class="row">
+            <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12 align-self-center">
+                <div class="eve-text">
+                    <h2 class="eventes">Нашите<br> простории</h2>
+                    <p class="events">Комплетно адаптибилни. Една сала за 150 учесници или три полами сали за групи од
+                        по 50 учесника. Училници за од 25 до 40 учесника. Избор од две локации. <br><br>
+                        Пулт за прием. И најважното место за networking - Brainster Kitchen. <br><br>
+                        Како го замислувате вашиот следен настан?
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12 img-gallery">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                        <figure class="figure">
+                            <img src="./assets/images/Events_Space/Brainster.jpg" class="figure-img img-fluid"
+                                alt="...">
+                            <figcaption class="figure-caption">Brainster</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                        <figure class="figure">
+                            <img src="./assets/images/Events_Space/1.jpg" class="figure-img img-fluid" alt="...">
+                            <figcaption class="figure-caption">Конференциска сала</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                        <figure class="figure">
+                            <img src="./assets/images/Events_Space/2.jpg" class="figure-img img-fluid" alt="...">
+                            <figcaption class="figure-caption">Сала со бина</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                        <figure class="figure">
+                            <img src="./assets/images/Events_Space/3.jpg" class="figure-img img-fluid" alt="...">
+                            <figcaption class="figure-caption">Адаптибилна училница</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                        <figure class="figure">
+                            <img src="./assets/images/Events_Space/4.jpg" class="figure-img img-fluid" alt="...">
+                            <figcaption class="figure-caption">Училница</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                        <figure class="figure">
+                            <img src="./assets/images/Events_Space/5.jpg" class="figure-img img-fluid" alt="...">
+                            <figcaption class="figure-caption">Училница</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                        <figure class="figure">
+                            <img src="./assets/images/Events_Space/6.jpg" class="figure-img img-fluid" alt="...">
+                            <figcaption class="figure-caption">Хол</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                        <figure class="figure">
+                            <img src="./assets/images/Events_Space/7.jpg" class="figure-img img-fluid" alt="...">
+                            <figcaption class="figure-caption">Канцелариски простор</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                        <figure class="figure">
+                            <img src="./assets/images/Events_Space/KITCHEN_03-a.jpg" class="figure-img img-fluid"
+                                alt="...">
+                            <figcaption class="figure-caption">Space Kitchen</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container-fluid section-3">
+
+        <div class="row">
+            <div class="col-lg-8 order-lg-1 col-md-12 col-sm-12 order-sm-2 col-xs-12 order-2">
+                <div class="row" style="height: 100%;">
+                    <div class="col-lg-6 col-md-6 col-sm-12 percent50">
+                        <div class="row" style="height: 100%;">
+                            <div class="col-lg-12 col-md-12 col-sm-12 img-bg-1">
+                                <picture>
+                                    <source media="(min-width: 991px)"
+                                        srcset="./assets/images/Space_Kitchen_Galerija/IMG_1A.jpg"
+                                        class="figure-img img-fluid" alt="...">
+                                    <source media="(min-width: 767)"
+                                        srcset="./assets/images/Space_Kitchen_Galerija/IMG_1.jpg"
+                                        class="figure-img img-fluid" alt="...">
+                                    <img class="figure-img img-fluid"
+                                        src="./assets/images/Space_Kitchen_Galerija/IMG_1.jpg" alt="">
+                                </picture>
+                                <!-- <img src="./assets/images/Space_Kitchen_Galerija/IMG_1A.jpg"
+                                    class="figure-img img-fluid" alt="..."> -->
+                            </div>
+                            <div class="col-hidden-md col-lg-6 col-md-12 img-bg-3">
+                                <picture>
+                                    <source media="(min-width: 991px)"
+                                        srcset="./assets/images/Space_Kitchen_Galerija/IMG_3A.jpg"
+                                        class="figure-img img-fluid" alt="...">
+                                    <source media="(min-width: 767)"
+                                        srcset="./assets/images/Space_Kitchen_Galerija/IMG_3.jpg"
+                                        class="figure-img img-fluid" alt="...">
+                                    <img class="figure-img img-fluid"
+                                        src="./assets/images/Space_Kitchen_Galerija/IMG_3.jpg" alt="">
+                                </picture>
+                                <!-- <img src="./assets/images/Space_Kitchen_Galerija/IMG_3A.jpg"
+                                    class="figure-img img-fluid" alt="..."> -->
+                            </div>
+                            <div class="col-hidden-md col-lg-6 col-md-12 img-bg-4">
+                                <picture>
+                                    <source media="(min-width: 991px)"
+                                        srcset="./assets/images/Space_Kitchen_Galerija/IMG_4A.jpg"
+                                        class="figure-img img-fluid" alt="...">
+                                    <source media="(min-width: 767)"
+                                        srcset="./assets/images/Space_Kitchen_Galerija/IMG_4.jpg"
+                                        class="figure-img img-fluid" alt="...">
+                                    <img class="figure-img img-fluid"
+                                        src="./assets/images/Space_Kitchen_Galerija/IMG_4.jpg" alt="">
+                                </picture>
+                                <!-- <img src="./assets/images/Space_Kitchen_Galerija/IMG_4A.jpg"
+                                    class="figure-img img-fluid" alt="..."> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 percent50 img-bg-2">
+                        <picture>
+                            <source media="(min-width: 991px)"
+                                srcset="./assets/images/Space_Kitchen_Galerija/IMG_2A.jpg" class="figure-img img-fluid"
+                                alt="...">
+                            <source media="(min-width: 767)" srcset="./assets/images/Space_Kitchen_Galerija/IMG_2.jpg"
+                                class="figure-img img-fluid" alt="...">
+                            <img class="figure-img img-fluid" src="./assets/images/Space_Kitchen_Galerija/IMG_2.jpg"
+                                alt="">
+                        </picture>
+                        <!-- <img src="./assets/images/Space_Kitchen_Galerija/IMG_2A.jpg" class="figure-img img-fluid img-2"
+                            alt="..."> -->
+                    </div>
+                    <div class="col-hidden-lg col-lg-6 col-md-6 col-sm-12 img-bg-3">
+                        <picture>
+                            <source media="(min-width: 991px)"
+                                srcset="./assets/images/Space_Kitchen_Galerija/IMG_3A.jpg" class="figure-img img-fluid"
+                                alt="...">
+                            <source media="(min-width: 767)" srcset="./assets/images/Space_Kitchen_Galerija/IMG_3.jpg"
+                                class="figure-img img-fluid" alt="...">
+                            <img class="figure-img img-fluid" src="./assets/images/Space_Kitchen_Galerija/IMG_3.jpg"
+                                alt="">
+                        </picture>
+                    </div>
+                    <div class="col-hidden-lg col-lg-6 col-md-6 col-sm-12 img-bg-4">
+                        <picture>
+                            <source media="(min-width: 991px)"
+                                srcset="./assets/images/Space_Kitchen_Galerija/IMG_4A.jpg" class="figure-img img-fluid"
+                                alt="...">
+                            <source media="(min-width: 767)" srcset="./assets/images/Space_Kitchen_Galerija/IMG_4.jpg"
+                                class="figure-img img-fluid" alt="...">
+                            <img class="figure-img img-fluid" src="./assets/images/Space_Kitchen_Galerija/IMG_4.jpg"
+                                alt="">
+                        </picture>
+                    </div>
+
+                </div>
+            </div>
+
+            <div
+                class="col-lg-4 order-lg-2 col-md-12 order-md-1 col-sm-12 order-sm-1 sol-xs-12 order-1 align-self-center">
+                <div class="eve-text">
+                    <h2 class="eventes">Space Kitchen</h2>
+                    <p class="events">Место каде сите настани започнуваат и завршуваат. Место каде нашиот тим готви и
+                        експериментира. Нашата кујна има само едно правило. <br><br>
+                        Храната мора да биде вегетаријанска. Пијалок, кафе или мезе. Вие одберете вид на кетеријг, ние
+                        ќе го обезбедиме.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container-fluid section-4">
+
+        <h2 class="eventes">Нудиме</h2>
+
+        <div class="row">
+            <div class="col-lg-11 col-md-12 col-sm-12 d-flex flex-wrap">
+                <div class="btn btn-dark black-block order"><i class="fas fa-globe-asia"></i> Простор</div>
+                <div class="btn btn-dark black-block order"><i class="fas fa-hamburger"></i> Space Kitchen</div>
+                <div class="btn btn-dark black-block order"><i class="fas fa-globe"></i> Логистика</div>
+                <div class="btn btn-dark black-block order"><i class="fas fa-chalkboard-teacher"></i> Техничка Поддршка
+                </div>
+                <div class="btn btn-dark black-block order"><i class="fas fa-volume-down"></i> Звук</div>
+                <div class="btn btn-dark black-block order"><i class="far fa-lightbulb"></i> Светло</div>
+                <div class="btn btn-dark black-block order"><i class="fas fa-network-wired"></i> Помош при Организација
+                </div>
+                <div class="btn btn-dark black-block order"><i class="fas fa-photo-video"></i> Видео и Фотографија</div>
+                <div class="btn btn-dark black-block order"><i class="fab fa-instagram-square"></i> Промоција на
+                    Социјални
+                    Мрежи</div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="host" class="container-fluid section-5">
+
+        <div class="row">
+
+            <div class="col-lg-7 order-lg-1 col-md-6 order-md-2 col-sm-12 order-sm-2 align-self-center">
+                <div class="eve-text">
+                    <h3>Event Host</h3>
+                    <h5>Ања Макеска</h5>
+                    <h5>anja@brainster.co</h5>
+                    <h5>+389 (0)70 233 414</h5>
+                </div>
+            </div>
+
+            <div class="col-lg-5 order-lg-2 col-md-6 order-md-1 col-sm-12 order-sm-1">
+                <img src="./assets/images/Space_Kitchen_Galerija/Portret.jpg" class="figure-img img-fluid img-gray"
+                    alt="...">
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="container-fluid section-7">
+        <div class="row footer-links">
+            <div class="col-lg-3 order-lg-1 col-md-4 order-md-1 col-sm-12 order-sm-2 col-xs-12 order-2">
+                <h5>Корисни Линкови</h5>
+                <ul class="useful-links">
+                    <li class="a-link"><a data-container="body" data-toggle="popover" data-placement="top"
+                            data-content="e-mail: anja@brainster.co Phone No: 070 233 414">Контакт</a></li>
+                    <li class="a-link"><a href="https://www.wearelaika.com/" target="_blank">Отворени позиции</a></li>
+                    <li class="a-link"><a
+                            href="https://medium.com/wearelaika/brainster-space-the-new-home-of-the-local-tech-community-in-skopje-ffe97b564152"
+                            target="_blank">Галерија</a></li>
+                    <li class="a-link"><a href="#Calendar">Календар</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 order-lg-2 col-md-4 order-md-2 col-sm-12 order-sm-3 col-xs-12 order-3">
+                <h5>Социјални Мрежи</h5>
+                <a class="soc-icon" href="https://www.facebook.com/brainster.co/" target="_blank"><i
+                        class="fab fa-facebook"></i></a>
+                <a class="soc-icon" href="https://www.linkedin.com/school/brainster-co/" target="_blank"><i
+                        class="fab fa-linkedin-in"></i></a>
+                <a class="soc-icon" href="https://www.instagram.com/brainsterco/" target="_blank"><i
+                        class="fab fa-instagram"></i></a>
+            </div>
+            <div
+                class="text-lg-right text-md-right col-lg-3 order-lg-3 offset-lg-3 col-md-4 order-md-3 col-sm-12 order-sm-1 col-xs-12 order-1">
+                <a class="logo-link f-logo" href="index.html">
+                    <figure id="logo">
+                        <img src="assets/brainster_space_logo.svg" alt="Logo Brainster-Space">
+                    </figure>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center">
+        <p class="p-footer">COPYRIGHT &copy BrainsterSpace. All rights reserved</p>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+    <script src="js/main.js"></script>
+    <script>
+        $('#myModal').on('shown.bs.modal', function () {
+            $('#myInput').trigger('focus')
+        });
+
+        $(function () {
+            $('[data-toggle="popover"]').popover()
+        });
+    </script>
+</body>
+
+</html>

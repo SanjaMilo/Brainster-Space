@@ -1,0 +1,842 @@
+body,
+html {
+    height: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    vertical-align: baseline;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    /* line-height: 1.5; */
+    text-rendering: optimizeLegibility;
+    scroll-behavior: smooth;
+}
+
+figure {
+    margin-bottom: 0 !important;
+}
+
+a {
+    cursor: pointer;
+    color: rgb(48, 47, 56) !important;
+    transition: all 0.1s ease 0s;
+}
+
+a:hover {
+    text-decoration: none !important;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    height: 115px;
+}
+
+.header {
+    position: relative;
+    width: 90%;
+    height: 100%;
+    /* max-width: 1440px; */
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav#navbar-links,
+aside {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+aside {
+    margin-left: 40px;
+}
+
+/* aside:last-of-type {
+    margin-left: 0;
+    position: absolute;
+    right: 0;
+} */
+
+a.nav-links {
+    display: block;
+}
+
+p.p-links:hover {
+    border-bottom: 2px solid #fcd232;
+    margin-bottom: -2px;
+}
+
+p.p-links {
+    font-weight: bold;
+    font-size: 14px;
+    margin: 0;
+    padding: 3px;
+}
+
+.p-button,
+.send-btn {
+    font-weight: 400;
+    font-size: 14px;
+    margin: 0;
+    padding: 12px 18px;
+    background-color: rgb(48, 47, 56) !important;
+    color: #fcd232 !important;
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+}
+
+i.fa-plus,
+i.fa-arrow-right {
+    font-weight: 200;
+    margin-right: 8px;
+    line-height: 1.5;
+}
+
+/* Burger menu  */
+
+.navbar-menu, 
+.navbar-menu-2 {
+    display: none;
+}
+
+/* Drop Header Menu  and Second navbar buttons drop down menu */
+
+header.drop-header,
+div.header-2-drop {
+    display: none;
+    text-align: center;
+    height: auto;
+    background-color: #202020;
+}
+
+ul.drop-nav-menu,
+ul.nav-list-2-drop {
+    list-style: none;
+    margin-bottom: 0;
+    padding: 2%;
+}
+
+ul.drop-nav-menu li,
+ul.nav-list-2-drop li {
+    margin: 2rem;
+}
+
+.drop-links>.d-links,
+.d-btn-nav-2 {
+    font-weight: bold !important;
+    font-size: 16px !important;
+    padding: 3px;
+    color: #F5F5F5 !important;
+}
+
+p.d-links,
+.btn-nav-2 {
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+.d-links:active,
+.d-btn-nav-2:active {
+    border-bottom: 2px solid #fcd232;
+    margin-bottom: -2px;
+    border-radius: 0px !important;
+}
+
+.drop-p-button {
+    display: inline-block;
+    background-color: #fcd232;
+    color: #202020;
+    font-weight: bold;
+    font-size: 14px;
+    margin: 0;
+    padding: 12px 18px;
+    border-radius: 5px;
+}
+
+.drop-p-button i {
+    font-weight: 600;
+}
+
+/* Modal  */
+
+.modal-dialog {
+    max-width: 650px !important;
+}
+
+.modal-header {
+    border-bottom: none !important;
+}
+
+.modal-header>h4 {
+    font-weight: bold;
+}
+
+.modal-body label {
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.form-group {
+    position: relative;
+}
+
+.close {
+    opacity: 1 !important;
+}
+
+.close:hover {
+    opacity: 0.5 !important;
+}
+
+small {
+    color: #ff1300;
+    position: absolute;
+    right: 0;
+}
+
+.off-btn {
+    font-weight: bold !important;
+    margin-right: 1rem;
+}
+
+.off-btn,
+.send-btn {
+    float: right;
+}
+
+/* Vtor header (navbar) */
+
+.header-2 {
+    position: relative;
+    width: 100%;
+    height: 64px;
+    display: none;
+}
+
+.nav-2 {
+    position: relative;
+    width: 90%;
+    height: 100%;
+    /* max-width: 1440px; */
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+}
+
+ul.nav-list-2 {
+    list-style: none;
+    background-color: #E0E0E0;
+    height: 100%;
+    margin: 0;
+    padding: 0 16px;
+}
+
+li.nav-el-2 {
+    display: inline-block;
+    padding: 1rem 0.2rem;
+}
+
+button.btn-nav-2 {
+    font-size: 12px;
+    font-weight: 700;
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+
+}
+
+.btn-nav-2:focus {
+    box-shadow: none !important; 
+}
+
+button.btn-nav-2:hover {
+    border-bottom: 2px solid #181818;
+    margin-bottom: -2px;
+    cursor: pointer !important;
+}
+
+/* Carousel section  */
+
+.section-caro {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+div.img-darken {
+    background-color: #000000;
+}
+
+img.darken {
+    opacity: 0.5;
+}
+
+button.rounded-btn {
+    font-weight: 800;
+    font-size: 14px;
+    padding: 8px 16px;
+    background-color: #fcd232;
+    color: #202020;
+    border: none;
+    border-radius: 16px;
+}
+
+button.rounded-btn:hover {
+    transition: all 0.2s ease-out;
+    box-shadow: inset 0px -1px 7px 2px rgba(0,0,0,0.75);
+}
+
+.carousel-caption {
+    text-align: left !important;
+    bottom: 25% !important;
+    /* position: absolute;
+    left: 10% !important;
+    right: 10% !important; */
+}
+
+.carousel-caption h1 {
+    font-size: 50px;
+    margin: 0;
+    padding: 2rem 0rem;
+}
+
+.carousel-caption p {
+    font-size: 20px !important;
+    margin: 0;
+    padding-bottom: 2rem;
+}
+
+.btn-eve {
+    background-color: white !important;
+    color: #181818 !important;
+    padding: 10px 20px !important;
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    font-weight: 600 !important;
+    font-size: 14px !important;
+    transition: all 0.2s ease-out !important;
+}
+
+.btn-eve:hover {
+    transform: scale(1.05);
+    box-shadow: 10px 15px 15px -7px rgba(235, 221, 27, 0.664);
+}
+
+i.fa-arrow-right {
+    font-weight: 600;
+    margin-right: 8px;
+    line-height: 1.5;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-image: none !important;
+}
+
+
+i.round-arrow-2 {
+    line-height: 1.5 !important;
+    border-radius: 50% !important;
+    padding: 0.40rem 0.80rem !important;
+    color: white;
+    border: 2px solid white !important;
+    margin-right: 0 !important;
+    font-weight: 600;
+}
+
+i.round-arrow-2:hover {
+    color: #fcd232;
+}
+
+a.carousel-control-prev {
+    width: 10%;
+    position: absolute;
+    top: 75%;
+    bottom: 25%;
+    left: 77%;
+}
+
+a.carousel-control-next {
+    width: 10%;
+    position: absolute;
+    top: 75%;
+    bottom: 25%;
+    right: 8%;
+}
+
+span.slide-num {
+    font-size: 26px;
+    color: #fcd232;
+    /* position: absolute;
+    right: 7%;
+    bottom: 7%; */
+    float: right;
+}
+
+/* Card section  */
+
+.col-lg-4,
+.col-md-6,
+.col-sm-12,
+.col-xs-12 {
+    margin-bottom: 30px;
+}
+
+.card-container {
+    padding-top: 5%;
+    line-height: 1.2; 
+}
+
+a.a-card {
+    height: 100%;
+    display: block;
+    transition: all 0.2s ease-out;
+    overflow: hidden;
+    border-radius: .25rem;
+    /* height: 520px; */
+    overflow: hidden;
+}
+
+div.card-footer {
+    background-color: inherit;
+    border-top: none;
+    padding: 1.25rem;
+}
+
+a.a-card:hover {
+    box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.3);
+    /* box-shadow: 0px 6px 20px 5px rgba(0,0,0,0.75); */
+}
+
+.zoom-img {
+    transition: all 0.2s ease-out;
+}
+
+.zoom-img:hover {
+    transform: scale(1.1);
+}
+
+.card:hover {
+    /* filter: hue-rotate(90deg); */
+    background-color: #202020;
+    color: white;
+}
+
+.card:hover h5.card-title {
+    color: #fcd232;
+}
+
+.round-arrow {
+    line-height: 1.5 !important;
+    border-radius: 50% !important;
+    padding: 0.40rem 0.80rem !important;
+    border: 2px solid rgb(48, 47, 56) !important;
+    /* position: absolute;
+    right: 1.25rem;
+    bottom: 1.25rem; */
+    float: right;
+    transition: all 0.2s ease-out;
+}
+
+.round-arrow i {
+    margin-right: 0 !important;
+    font-weight: 600;
+}
+
+.card:hover .round-arrow {
+    color: white;
+    border: 2px solid white !important;
+}
+
+.round-arrow:hover {
+    /* color: #0069d9 !important; */
+    color: #fcd232 !important;
+    transform: scale(1.1);
+}
+
+.card p {
+    line-height: 1.2 !important;
+}
+
+
+/* Footer section */
+
+.section-7 {
+    margin-top: 5%;
+    background-color: #F5F5F5;
+    border-top: 2px solid #C8C8C8;
+}
+
+.footer-links {
+    padding: 5rem 3rem;
+}
+
+h5 {
+    padding-bottom: 1rem;
+}
+
+ul.useful-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li.a-link {
+    padding: 0.3rem 0;
+    font-weight: 500;
+}
+
+.f-logo img {
+    height: 100px;
+    width: 100px;
+}
+
+.soc-icon {
+    margin-right: 1.7rem;
+
+}
+
+.fa-facebook,
+.fa-linkedin-in,
+.fa-instagram {
+    font-size: 2rem;
+}
+
+.fa-facebook {
+    color: #4267B2;
+}
+
+.fa-linkedin-in {
+    color: #0077B5;
+}
+
+.fa-instagram {
+    color: #DC4288;
+}
+
+footer {
+    background-color: #E0E0E0;
+}
+
+p.p-footer {
+    margin: 0;
+    padding: 1.7rem;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+
+/* Media queries  */
+
+@media only screen and (max-width: 1230px) {
+
+    aside {
+        margin-left: 20px;
+    }
+
+    p.p-links,
+    .p-button,
+    .send-btn {
+        font-size: 14px;
+    }
+
+    .carousel-caption {
+        bottom: 15% !important;
+        position: absolute;
+        left: 8% !important;
+        right: 15% !important;
+    }
+
+    .carousel-caption h1 {
+        font-size: 45px;
+        padding: 1rem 0rem;
+    }
+
+    span.slide-num {
+        /* position: absolute;
+        right: 9%;
+        top: 65%; */
+        float: right;
+    }
+
+    a.carousel-control-prev {
+        position: absolute;
+        top: 85%;
+        left: 77.5%;
+    }
+    
+    a.carousel-control-next {
+        position: absolute;
+        top: 85%;
+        right: 6%;
+    }
+
+}
+
+@media only screen and (max-width: 1079px) {
+
+    aside {
+        margin-left: 20px;
+    }
+
+    p.p-links,
+    .p-button,
+    .send-btn {
+        font-size: 12px;
+    }
+
+    span.slide-num {
+        /* position: absolute;
+        right: 7%;
+        top: 68% */
+        float: right;
+    }
+
+    a.carousel-control-prev {
+        position: absolute;
+        top: 85%;
+        left: 77.5%;
+    }
+    
+    a.carousel-control-next {
+        position: absolute;
+        top: 85%;
+        right: 6%;
+    }
+
+}
+
+/* Tablet :  */
+/* Mobile ans small mobile devices */
+
+@media only screen and (max-width: 992px) {
+
+    nav#navbar-links {
+        display: none;
+    }
+
+    .navbar-menu {
+        display: block;
+        margin: 0;
+        padding: 10px 12px;
+        background-color: rgb(48, 47, 56);
+        color: #fcd232;
+        box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.15);
+        border: none;
+        border-radius: 5px;
+        position: absolute;
+        right: 0;
+    }
+
+    a.nav-links {
+        position: absolute;
+        right: 4.5rem;
+    }
+
+    .navbar-menu span,
+    .navbar-menu-2 span {
+        vertical-align: middle;
+    }
+
+    .navbar-menu i.fa-bars {
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    /* second header */
+
+    .nav-2 {
+        width: 100%; 
+    }
+
+    li.filter {
+        display: none;
+    }
+
+    ul.nav-list-2 {
+        width: 100%;
+    }
+
+    /* Carousel  */
+
+    .carousel-caption h1 {
+        font-size: 30px;
+    }
+
+    .carousel-caption p {
+        font-size: 16px !important;
+    }
+
+    .carousel-caption {
+        position: absolute;
+        right: 10% !important;
+        left: 2% !important;
+    }
+
+    span.slide-num {
+        /* position: absolute;
+        right: 12%;
+        top: 78% */
+        float: right;
+    }
+
+    a.carousel-control-prev {
+        position: absolute;
+        top: 85%;
+        left: 81%;
+    }
+    
+    a.carousel-control-next {
+        position: absolute;
+        top: 85%;
+        right: 1%;
+    }
+
+    /* Drop heading menu */
+
+    header.drop-header {
+        display: block;
+    }
+
+    li#last-btn {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    .header-2 {
+        display: none;
+    }
+
+    div.header-2-drop {
+        display: block;
+    }
+
+    .navbar-menu-2 {
+        display: block;
+        margin: 0;
+        padding: 10px 12px;
+        background-color: rgb(48, 47, 56);
+        /* background-color: #fcd232; */
+        color: #fcd232;
+        box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.15);
+        border: none;
+        border-radius: 5px;
+        position: absolute;
+        right: 4.5rem;
+    }
+
+    a.nav-links {
+        position: absolute;
+        right: 9rem;
+    }
+
+    .d-btn-nav-2:focus {
+        box-shadow: none !important;
+    }
+    
+
+    .carousel-caption h1 {
+        font-size: 25px;
+    }
+
+    .carousel-caption p {
+        font-size: 14px !important;
+    }
+
+    .carousel-caption {
+        position: absolute;
+        right: 2% !important;
+        left: 2% !important;
+    }
+
+    span.slide-num {
+        position: absolute;
+        right: 47%;
+        top: 95%;
+        /* float: right; */
+    }
+
+    a.carousel-control-prev {
+        position: absolute;
+        bottom: 10%;
+        left: 0%;
+    }
+    
+    a.carousel-control-next {
+        position: absolute;
+        bottom: 10%;
+        right: 2%;
+    }
+
+    .btn-eve {
+        padding: 5px 10px !important;
+        font-size: 12px;
+    }
+
+    button.rounded-btn {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+
+    /* Drop menu last button */
+
+    li#last-btn {
+        display: block;
+    }
+
+    .header a.nav-links {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 670px) {
+    .carousel-caption h1 {
+        font-size: 20px;
+    }
+
+    .carousel-caption p {
+       display: none;
+    }
+
+}
+
+
+@media only screen and (max-width: 450px) {
+    
+    .p-button {
+        padding: 8px 10px;
+        font-size: 12px;
+    }
+
+    .navbar-menu {
+        font-size: 12px;
+        padding: 8px 10px;
+    }
+
+    .navbar-menu-2 {
+        padding: 5px 7px;
+    }
+
+    .navbar-menu-2 {
+        position: absolute;
+        right: 3rem;
+    }
+
+    a.nav-links {
+        position: absolute;
+        right: 6rem;
+    }
+
+}
