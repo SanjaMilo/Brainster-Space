@@ -639,4 +639,12 @@ p.p-footer {
         padding: 8px 20px !important;
     }
 
+    label {
+        margin-bottom: 1rem !important;
+    }
+
+    small {
+        top: 20px;
+    }
+
 }
