@@ -643,5 +643,12 @@ p.p-footer {
         right: 3rem;
     }
 
+    .icon-text > p {
+        font-size: 14px;
+    }
+
+    .h-academy>h2 {
+        font-size: 26px;
+    }
 
 }

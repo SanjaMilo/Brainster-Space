@@ -242,6 +242,7 @@ small {
 
 .right-counter {
     display: flex;
+    justify-content: flex-end;
     width: 50%;
 }
 
@@ -567,6 +568,7 @@ p.p-footer {
     .left-heading,
     .right-counter {
         margin-bottom: 1rem;
+        justify-content: flex-start;
     }
 
     .w-days {
@@ -627,6 +629,10 @@ p.p-footer {
     .calendar-heading {
         align-items: center;
     }
+
+    .right-counter, .left-heading {
+        width: unset;
+    }
 }
 
 @media only screen and (max-width: 550px) {
@@ -644,6 +650,24 @@ p.p-footer {
     }
 }
 
+@media only screen and (max-width: 520px) {
+    span.month-year {
+        font-size: 20px;
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+    .num, .empty {
+        width: 10%;
+        height: 45%;
+    }
+
+    .num span {
+        font-size: 14px;
+    }
+}
+
 
 @media only screen and (max-width: 450px) {
 
@@ -652,8 +676,39 @@ p.p-footer {
         padding: 8px 10px;
     }
 
-    .num, .empty {
-        height: 45px;
+}
+
+@media only screen and (max-width: 380px) {
+    .num span {
+        font-size: 12px;
     }
 
+    .num, .empty {
+        width: 5%;
+        height: 30px;
+    }
+
+    .month-num {
+        flex-wrap: unset;
+    }
+
+    .weeks {
+        display: unset;
+        justify-content: unset;
+    }
+
+    .round-arrow {
+        border: none !important;
+    }
+
+    span.month-year {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+}
+
+@media only screen and (max-width: 280px) {
+    .num span {
+        font-size: 10px;
+    }
 }
