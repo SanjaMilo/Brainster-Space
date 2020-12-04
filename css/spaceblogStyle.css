@@ -260,6 +260,8 @@ button.btn-nav-2 {
 
 .btn-nav-2:focus {
     box-shadow: none !important; 
+    border-bottom: 2px solid #181818;
+    margin-bottom: -2px;
 }
 
 button.btn-nav-2:hover {
