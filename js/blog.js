@@ -16,7 +16,7 @@ function openSubheader() {
     };
 };
 
-blogBtn1.addEventListener('click', openSubheader);
+// blogBtn1.addEventListener('click', openSubheader);
 blogBtn2.addEventListener('click', openSubheader);
 
 // Burger menu for filter buttons on mobile devices 
@@ -59,22 +59,7 @@ class Card {
 };
 
 let cardsRow = document.querySelector('.cards-row');
-// For Header-2
-let allBtn = document.querySelector('.header-2 .all');
-let careerBtn = document.querySelector('.header-2 .career');
-let technoBtn = document.querySelector('.header-2 .techno');
-let dataBtn = document.querySelector('.header-2 .data-sci');
-let marketingBtn = document.querySelector('.header-2 .marketing');
-let designBtn = document.querySelector('.header-2 .design');
-let impactBtn = document.querySelector('.header-2 .impact');
-// For Header-2-drop
-let allBtn2 = document.querySelector('.header-2-drop .all');
-let careerBtn2 = document.querySelector('.header-2-drop .career');
-let technoBtn2 = document.querySelector('.header-2-drop .techno');
-let dataBtn2 = document.querySelector('.header-2-drop .data-sci');
-let marketingBtn2 = document.querySelector('.header-2-drop .marketing');
-let designBtn2 = document.querySelector('.header-2-drop .design');
-let impactBtn2 = document.querySelector('.header-2-drop .impact');
+let buttonsFiltering = Array.from(document.querySelectorAll('.filter-btn'));
 
 let arrAllCards = [];
 let arrCareerCards = [];
@@ -165,70 +150,51 @@ function createCards(obj, container) {
 </div>`
 };
 
-function showAllcards() {
+// Filtering cards by category 
+
+function filterCards(e) {
     cardsRow.innerHTML = "";
+    if (e.currentTarget.innerText === "СИТЕ") {
+        arrAllCards.forEach(function(elem) {
+            createCards(elem, cardsRow);
+        }); 
+    } else if (e.currentTarget.innerText === "КАРИЕРА") {
+        arrCareerCards.forEach(function(elem) {
+            createCards(elem, cardsRow);
+        });
+    } else if (e.currentTarget.innerText === "ТЕХНОЛОГИЈА") {
+        arrTechnoCards.forEach(function(elem) {
+            createCards(elem, cardsRow);
+        });
+    } else if (e.currentTarget.innerText === "DATA SCIENCE") {
+        arrDataSciCards.forEach(function(elem) {
+            createCards(elem, cardsRow);
+        });
+    } else if (e.currentTarget.innerText === "МАРКЕТИНГ") {
+        arrMarketingCards.forEach(function(elem) {
+            createCards(elem, cardsRow);
+        });
+    } else if (e.currentTarget.innerText === "ДИЗАЈН") {
+        arrDesignCards.forEach(function(elem) {
+            createCards(elem, cardsRow);
+        });
+    } else if (e.currentTarget.innerText === "IMPACT") {
+        arrImpactCards.forEach(function(elem) {
+            createCards(elem, cardsRow);
+        });
+    };
+};
+
+// Adding event listeners on filtering buttons and handler function filterCards
+buttonsFiltering.forEach(function(btn) {
+    btn.addEventListener('click', filterCards);
+});
+
+// Loading all cards on Page load
+window.addEventListener('load', function() {
     arrAllCards.forEach(function(elem) {
         createCards(elem, cardsRow);
-    }); 
-};
-
-function showCareerCards() {
-    cardsRow.innerHTML = "";
-    arrCareerCards.forEach(function(elem) {
-        createCards(elem, cardsRow);
     });
-};
+});
 
-function showTechnoCards() {
-    cardsRow.innerHTML = "";
-    arrTechnoCards.forEach(function(elem) {
-        createCards(elem, cardsRow);
-    });
-};
-
-function showDataCards() {
-    cardsRow.innerHTML = "";
-    arrDataSciCards.forEach(function(elem) {
-        createCards(elem, cardsRow);
-    });
-};
-
-function showMarketingCards() {
-    cardsRow.innerHTML = "";
-    arrMarketingCards.forEach(function(elem) {
-        createCards(elem, cardsRow);
-    });
-};
-
-function showDesignCards() {
-    cardsRow.innerHTML = "";
-    arrDesignCards.forEach(function(elem) {
-        createCards(elem, cardsRow);
-    });
-};
-
-function showImpactCards() {
-    cardsRow.innerHTML = "";
-    arrImpactCards.forEach(function(elem) {
-        createCards(elem, cardsRow);
-    });
-};
-
-// For Header-2
-allBtn.addEventListener('click', showAllcards);
-careerBtn.addEventListener('click', showCareerCards);
-technoBtn.addEventListener('click', showTechnoCards);
-dataBtn.addEventListener('click', showDataCards);
-marketingBtn.addEventListener('click', showMarketingCards);
-designBtn.addEventListener('click', showDesignCards);
-impactBtn.addEventListener('click', showImpactCards);
-window.addEventListener('load', showAllcards);
-// For Header-2-drop
-allBtn2.addEventListener('click', showAllcards);
-careerBtn2.addEventListener('click', showCareerCards);
-technoBtn2.addEventListener('click', showTechnoCards);
-dataBtn2.addEventListener('click', showDataCards);
-marketingBtn2.addEventListener('click', showMarketingCards);
-designBtn2.addEventListener('click', showDesignCards);
-impactBtn2.addEventListener('click', showImpactCards);
 

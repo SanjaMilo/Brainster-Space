@@ -296,7 +296,6 @@ a.a-card:hover {
 }
 
 .round-arrow:hover {
-    /* color: #0069d9 !important; */
     color: #fcd232 !important;
     transform: scale(1.1);
 }

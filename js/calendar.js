@@ -9,23 +9,23 @@ let monthsArr = ['Јануари', 'Февруари', 'Март', 'Април',
 
 // Events to be added in the Calendar schedule 
 let events = [{
-        date: new Date(2020, 5, 9),
-        title: 'Deep dive into Data Science',
+        date: new Date(2020, 11, 1),
+        title: 'Deep dive into Programming',
         time: '10:00 - 18:00',
         day: 'Ден 1',
         bgColor: 'blue',
         color: 'white'
     },
     {
-        date: new Date(2020, 5, 10),
-        title: 'Deep dive into Data Science',
+        date: new Date(2020, 11, 3),
+        title: 'Deep dive into Programming',
         time: '10:00 - 12:00',
         day: 'Ден 2',
         bgColor: 'blue',
         color: 'white'
     },
     {
-        date: new Date(2020, 5, 23),
+        date: new Date(2020, 11, 23),
         title: 'Deep dive into Marketing',
         time: '12:00 - 18:00',
         day: 'Ден 1',
@@ -33,7 +33,7 @@ let events = [{
         color: 'white'
     },
     {
-        date: new Date(2020, 5, 24),
+        date: new Date(2020, 11, 27),
         title: 'Deep dive into Marketing',
         time: '10:00 - 16:00',
         day: 'Ден 2',
@@ -41,7 +41,7 @@ let events = [{
         color: 'white'
     },
     {
-        date: new Date(2020, 7, 15),
+        date: new Date(2020, 11, 14),
         title: 'Deep dive into Data Science',
         time: '10:00 - 16:00',
         day: 'Ден 1',
@@ -49,7 +49,7 @@ let events = [{
         color: 'white'
     },
     {
-        date: new Date(2020, 7, 16),
+        date: new Date(2020, 11, 15),
         title: 'Deep dive into Data Science',
         time: '10:00 - 16:00',
         day: 'Ден 2',

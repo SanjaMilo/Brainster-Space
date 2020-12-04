@@ -218,7 +218,7 @@ small {
     position: relative;
     width: 100%;
     height: 64px;
-    display: none;
+    /* display: none; */
 }
 
 .nav-2 {
@@ -719,7 +719,7 @@ p.p-footer {
     }
 
     div.header-2-drop {
-        display: block;
+        display: none;
     }
 
     .navbar-menu-2 {
