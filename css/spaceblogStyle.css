@@ -69,6 +69,10 @@ a.nav-links {
     display: block;
 }
 
+.active-link {
+    border-bottom: 2px solid #fcd232; 
+}
+
 p.p-links:hover {
     border-bottom: 2px solid #fcd232;
     margin-bottom: -2px;
