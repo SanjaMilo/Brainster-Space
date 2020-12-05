@@ -749,6 +749,7 @@ p.p-footer {
 
     .d-btn-nav-2:focus {
         box-shadow: none !important;
+        color: #fcd232 !important;
     }
     
 
