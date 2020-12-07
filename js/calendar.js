@@ -181,8 +181,6 @@ function showCalendar(month, year, event) {
                                     numCell.style.color = ev.color;
                                 }
 
-                                // } else if (monthsArr.indexOf(viewedMonth) != ev.date.getMonth()) {
-                                //     eventPlan.style.display = 'none'; // ne raboti
                             }
 
                         });
