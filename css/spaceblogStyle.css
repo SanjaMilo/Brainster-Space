@@ -333,7 +333,7 @@ button.rounded-btn:hover {
 
 .btn-eve:hover {
     transform: scale(1.05);
-    box-shadow: 10px 15px 15px -7px rgba(235, 221, 27, 0.664);
+    box-shadow: 10px 10px 10px -2px rgba(235, 221, 27, 0.664);
 }
 
 i.fa-arrow-right {

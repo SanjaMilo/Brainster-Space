@@ -75,7 +75,7 @@ p.p-links:hover {
 }
 
 .active-link {
-    border-bottom: 2px solid #fcd232; 
+    border-bottom: 2px solid #fcd232;
 }
 
 p.p-links {
@@ -271,39 +271,99 @@ figcaption {
     color: #181818 !important;
 }
 
-/* .img-bg-2 {
-    background-image: url("../assets/images/Space_Kitchen_Galerija/IMG_2.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+img.img-open-modal {
+    cursor: pointer;
+    transition: 0.3s;
 }
 
-.img-bg-1 {
-    background-image: url("../assets/images/Space_Kitchen_Galerija/IMG_1.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+img.img-open-modal:hover {
+    opacity: 0.8;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.img-bg-3 {
-    background-image: url("../assets/images/Space_Kitchen_Galerija/IMG_3.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+/* Modal showing enlarged image  */
+
+div.modal-container {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 50px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Black w/ opacity */
 }
 
-.img-bg-4 {
-    background-image: url("../assets/images/Space_Kitchen_Galerija/IMG_4.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-} */
+img.img-modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 950px;
+}
 
-/* .percent50 {
-    flex: 0 0 48% !important;
-    max-width: 48% !important;
-    margin: 1%;
-} */
+div#caption {
+    font-style: italic;
+    color: #fcd232;
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+
+img.img-modal-content,
+div#caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+span.close-x {
+    color: #fcd232;
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+span.close-x:hover,
+span.close-x:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 768px) {
+    img.img-modal-content {
+        width: 100%;
+    }
+
+    div.modal-container {
+        padding-top: 100px;
+    }
+}
 
 .img-bg-1 img,
 .img-bg-2 img,
@@ -311,10 +371,6 @@ figcaption {
 .img-bg-4 img {
     margin-bottom: 0;
 }
-
-/* .img-bg-1 {
-    padding-bottom: 30px;
-} */
 
 .black-block {
     padding: 0.5rem 1.7rem !important;
@@ -329,9 +385,7 @@ figcaption {
     color: #fcd232;
 }
 
-.img-gray {
-    filter: grayscale(100%);
-}
+/* Host Event section */
 
 .eve-text h3 {
     font-size: 35px;
@@ -340,6 +394,56 @@ figcaption {
     padding-bottom: 1.5rem;
 }
 
+.img-gray {
+    height: 100vh;
+    filter: grayscale(100%);
+}
+
+img.figure-img {
+    margin-bottom: 0;
+}
+
+div.host {
+    position: relative;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+div.text-over:hover {
+    cursor: pointer;
+    background:rgba(85, 54, 126, 0.4);
+    animation-name: hovered;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+div.text-over {
+    width: 100%;
+    height: 25%;
+    max-height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    color: #F5F5F5;
+    padding: 30px;
+    text-align: center;
+    font-style: italic;
+}
+
+div.text-over h5 {
+    padding-bottom: 0;
+}
+
+@keyframes hovered {
+    from { height: 25%;
+    }
+    to {
+        height: 100%;
+    }
+}
 
 /* Footer section */
 

@@ -299,8 +299,8 @@ span.month-year {
 }
 
 .today {
-    background-color: aqua !important;
-    box-shadow: 7px 7px 5px -2px rgba(0,0,0,0.25);
+    /* background-color: aqua !important; */
+    box-shadow: 10px 10px 5px -2px rgba(0,0,0,0.4);
 }
 
 .event {
