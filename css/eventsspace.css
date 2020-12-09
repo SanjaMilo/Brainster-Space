@@ -292,12 +292,9 @@ div.modal-container {
     top: 0;
     width: 100%;
     height: 100%;
-    overflow: auto;
-    /* Enable scroll if needed */
+    overflow: auto; /*enables scroll if needed*/
     background-color: rgb(0, 0, 0);
-    /* Fallback color */
     background-color: rgba(0, 0, 0, 0.9);
-    /* Black w/ opacity */
 }
 
 img.img-modal-content {
@@ -387,6 +384,11 @@ span.close-x:focus {
 
 /* Host Event section */
 
+div.host img.img-fluid {
+    width: 100%;
+    max-width: unset;
+}
+
 .eve-text h3 {
     font-size: 35px;
     font-weight: bold;
@@ -395,7 +397,6 @@ span.close-x:focus {
 }
 
 .img-gray {
-    height: 100vh;
     filter: grayscale(100%);
 }
 
@@ -428,9 +429,10 @@ div.text-over {
     background: rgb(0, 0, 0);
     background: rgba(0, 0, 0, 0.5);
     color: #F5F5F5;
-    padding: 30px;
+    padding: 25px;
     text-align: center;
     font-style: italic;
+    overflow: hidden;
 }
 
 div.text-over h5 {
