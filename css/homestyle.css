@@ -348,6 +348,8 @@ a.a-card:hover {
 .img-eve img.events {
     display: block;
     border-radius: 10px !important;
+    animation-name: zoom;
+    animation-duration: 2s;
 }
 
 /* za vtorata opcija za Kompanii  */
@@ -357,6 +359,18 @@ a.a-card:hover {
 .img-edu img.companies {
     display: none;
     border-radius: 10px !important;
+    animation-name: zoom;
+    animation-duration: 2s;
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
 }
 
 .edu-text p,
