@@ -238,6 +238,7 @@ small {
     text-align: center;
     transform: scale(1.3);
     font-style: italic;
+    color: rgba(106, 18, 221, 0.555);
 }
 
 .eve-text h2,
@@ -285,7 +286,7 @@ img.img-open-modal {
 
 img.img-open-modal:hover {
     opacity: 0.8;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(85, 54, 126, 0.4), 0 6px 20px 0 rgba(85, 54, 126, 0.3);
 }
 
 /* Modal showing enlarged image  */
@@ -374,6 +375,18 @@ span.close-x:focus {
 .img-bg-3 img,
 .img-bg-4 img {
     margin-bottom: 0;
+}
+
+.section-4 {
+ background-image: linear-gradient(rgba(85, 54, 126, 0.8), rgba(0, 0, 0, 0.5)), url("../assets/images/Academies/workplace.jpg");
+ background-repeat: no-repeat;
+ background-position: center;
+ background-size: cover;
+ background-attachment: fixed;
+}
+
+.section-4 h2.eventes {
+    color: #F5F5F5;
 }
 
 .black-block {
