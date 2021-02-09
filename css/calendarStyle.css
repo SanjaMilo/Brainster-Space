@@ -7,7 +7,6 @@ body {
     margin: 0;
     vertical-align: baseline;
     font-family: 'Inter', Arial, Helvetica, sans-serif;
-    /* line-height: 1.5; */
     text-rendering: optimizeLegibility;
     scroll-behavior: smooth;
 }
@@ -36,7 +35,6 @@ header {
     position: relative;
     width: 90%;
     height: 100%;
-    /* max-width: 1440px; */
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -55,30 +53,42 @@ aside {
     margin-left: 40px;
 }
 
-/* aside:last-of-type {
-    margin-left: 0;
-    position: absolute;
-    right: 0;
-} */
-
 a.nav-links {
     display: block;
-}
-
-p.p-links:hover {
-    border-bottom: 2px solid #fcd232;
-    margin-bottom: -2px;
 }
 
 .active-link {
     border-bottom: 2px solid #fcd232; 
 }
 
+.active-link:hover::before {
+    display: none;
+}
+
 p.p-links {
+    position: relative;
     font-weight: bold;
     font-size: 14px;
     margin: 0;
     padding: 3px;
+}
+
+p.p-links::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #fcd232;
+    transform: scale(0);
+    transform-origin: right center;
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+p.p-links:hover::before {
+    transform: scale(1); 
+    transform-origin: left center; 
 }
 
 .p-button,
